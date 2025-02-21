@@ -1,2 +1,82 @@
-.vscode
+# General ignores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Bazel build outputs
+bazel-*
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+bazel-genfiles/
+*.runfiles/
+
+# Skaffold-related files
+.skaffold/
+skaffold-debug.log
+
+# Helm chart packaging
+*.tgz
+infra/helm/charts/*/charts/
+infra/helm/charts/*/tmp/
+infra/helm/charts/*/crds/
+infra/helm/charts/*/templates/*.tpl
+
+# Terraform state & cache files
+infra/terraform/.terraform/
+infra/terraform/environments/**/.terraform/
+infra/terraform/environments/**/.terraform.lock.hcl
+infra/terraform/environments/**/terraform.tfstate*
+infra/terraform/modules/**/.terraform/
+infra/terraform/modules/**/.terraform.lock.hcl
+
+# K8s local and CI artifacts
+infra/k8s/apps/**/kustomization.yaml
+infra/k8s/base/.cache/
+infra/k8s/base/*.bak
+infra/k8s/base/tmp/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python virtualenv & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Node.js & NPM
+node_modules/
+
+# IDE / Editor Files
+.idea/
+.vscode/
+*.iml
+
+# Compiled binaries & temporary files
+*.out
+*.o
+*.a
+*.so
+*.exe
+*.dSYM/
+*.tmp
+
+# Docker-related files (for local dev artifacts)
+*.dockerignore
+*.dockerfile
+docker-compose.override.yaml
+
+# CI/CD Pipeline artifacts
 .env
+*.envrc
+/.github/workflows/*.cache

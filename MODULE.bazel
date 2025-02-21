@@ -1,4 +1,0 @@
-"""Module definition for monorepo-template, an app to support victims of abusive relationships."""
-
-module(name = "monorepo-template", version = "0.1.0")
-
