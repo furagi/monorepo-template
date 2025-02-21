@@ -1,0 +1,1 @@
+Scripts & utilities for managing Helm CLI & plugins, including platform speicific install scripts (e.g install.linux-amd64.sh).

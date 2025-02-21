@@ -1,0 +1,1 @@
+K8s manifests (separated into base and apps)

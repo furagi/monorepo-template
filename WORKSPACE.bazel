@@ -1,0 +1,8 @@
+workspace(name = "monorepo-template")
+
+load("@bazel_gazelle//:def.bzl", "gazelle")
+gazelle(name = "gazelle", prefix = "github.com/monorepo-template/monorepo-template")
+# local_repository(
+#  name = "users-service",
+#  path = "apps/users-service",
+# )

@@ -1,0 +1,1 @@
+Contains automation scripts to streamline local setup and deployments to simplifies onboarding for new developers and automate common tasks, reducing manual errors.

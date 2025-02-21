@@ -1,0 +1,1 @@
+Allows consistent deployment automation across services.

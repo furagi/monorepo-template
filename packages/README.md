@@ -1,0 +1,1 @@
+Houses shared libraries. It's recommended to have a folder per language, though it's not always the case - for example, storing a service clients will be more beneficial in a single folder, since they all belong to a single service client.
